@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>إنجليزي 99 · الشعبة 05 · بوابة الأسئلة والأجوبة</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#101B35;--blue:#315EF7;--bg:#F6F8FC;--card:#FFFFFF;--text:#20283A;--muted:#778198;--border:#E8ECF3;--ok:#16A36A;--wait:#E9A23B;--bad:#D6455D;--r:18px;--sh:0 1px 2px rgba(16,27,53,.05),0 8px 24px rgba(16,27,53,.06);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0B1226;--card:#141F3A;--text:#E6EBF7;--muted:#9AA6C2;--border:#24325A;--sh:0 8px 24px rgba(0,0,0,.35)}}
+:root[data-theme="dark"]{--bg:#0B1226;--card:#141F3A;--text:#E6EBF7;--muted:#9AA6C2;--border:#24325A;--sh:0 8px 24px rgba(0,0,0,.35)}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{margin:0;font-family:'Tajawal',system-ui,-apple-system,'Segoe UI',Tahoma,sans-serif;background:var(--bg);color:var(--text);line-height:1.7;-webkit-font-smoothing:antialiased}
+h1,h2,h3{line-height:1.3;margin:0}
+p{margin:0}
+a{color:inherit;text-decoration:none}
+button,input,select,textarea{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
+.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:1px solid transparent;border-radius:12px;padding:11px 22px;font-weight:700;font-size:1rem;cursor:pointer;transition:transform .15s,box-shadow .15s,background .15s}
+.btn:hover{transform:translateY(-1px)}
+.btn-primary{background:var(--blue);color:#fff;box-shadow:0 6px 18px rgba(49,94,247,.3)}
+.btn-primary:hover{background:#2850dc}
+.btn-ghost{background:var(--card);border-color:var(--border);color:var(--text)}
+.btn-danger{background:var(--bad);color:#fff}
+.btn-sm{padding:6px 12px;font-size:.85rem;border-radius:9px}
+.btn[disabled]{opacity:.6;cursor:wait;transform:none}
+/* Navbar */
+.nav{position:sticky;top:0;z-index:30;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(14px);border-bottom:1px solid var(--border)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:72px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.15rem}
+.logo i{width:34px;height:34px;border-radius:10px;background:var(--navy);display:grid;place-items:center;color:#fff;font-style:normal;font-size:.85rem}
+.links{display:flex;align-items:center;gap:6px}
+.links a{padding:8px 14px;border-radius:10px;font-weight:500;font-size:.98rem;color:var(--muted);transition:.15s}
+.links a:hover,.links a.on{color:var(--text);background:var(--card)}
+.links a.cta{background:var(--navy);color:#fff}
+.burger{display:none;background:none;border:1px solid var(--border);border-radius:10px;width:42px;height:42px;cursor:pointer;font-size:1.2rem}
+/* Hero */
+.hero{padding:72px 0 56px}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+.eyebrow{display:inline-block;font-weight:700;font-size:.9rem;color:var(--blue);margin-bottom:14px}
+.hero h1{font-size:clamp(2.2rem,5.4vw,3.9rem);font-weight:800;margin-bottom:18px}
+.hero p.lead{font-size:1.2rem;color:var(--muted);max-width:52ch;margin-bottom:28px}
+.who{display:flex;align-items:center;gap:12px;margin-bottom:28px;font-weight:700}
+.who i{width:46px;height:46px;border-radius:50%;background:var(--navy);color:#fff;display:grid;place-items:center;font-style:normal;font-size:1rem}
+.who small{display:block;color:var(--muted);font-weight:400}
+.row{display:flex;gap:12px;flex-wrap:wrap}
+.art{background:var(--navy);border-radius:28px;padding:20px;box-shadow:var(--sh)}
+.art svg{width:100%;height:auto;display:block}
+/* Sections / cards */
+.sec{padding:40px 0}
+.sec h2{font-size:1.9rem;margin-bottom:6px}
+.sub{color:var(--muted);margin-bottom:24px}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.stat{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:22px;box-shadow:var(--sh);cursor:pointer;text-align:start;transition:transform .2s,border-color .2s}
+.stat:hover{transform:translateY(-3px);border-color:var(--blue)}
+.stat b{display:block;font-size:2.4rem;font-weight:800;line-height:1.2}
+.stat span{color:var(--muted);font-weight:500}
+.stat.ok b{color:var(--ok)}.stat.wait b{color:var(--wait)}.stat.blue b{color:var(--blue)}
+.panel{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:24px;box-shadow:var(--sh)}
+.tools{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:12px;margin-bottom:20px}
+.in{width:100%;padding:12px 14px;border:1px solid var(--border);border-radius:12px;background:var(--card)}
+textarea.in{min-height:150px;resize:vertical}
+.qlist{display:grid;gap:14px}
+.q{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:20px 22px;box-shadow:var(--sh)}
+.q summary{list-style:none;cursor:pointer;display:grid;gap:8px}
+.q summary::-webkit-details-marker{display:none}
+.q h3{font-size:1.15rem}
+.meta{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center;color:var(--muted);font-size:.88rem;font-weight:500}
+.tag{background:var(--bg);border:1px solid var(--border);padding:2px 10px;border-radius:99px}
+.badge{display:inline-flex;align-items:center;gap:6px;padding:2px 11px;border-radius:99px;font-size:.82rem;font-weight:700}
+.badge::before{content:"";width:7px;height:7px;border-radius:50%;background:currentColor}
+.badge.answered{color:var(--ok);background:rgba(22,163,106,.12)}
+.badge.pending{color:var(--wait);background:rgba(233,162,59,.15)}
+.q .body{margin-top:16px;padding-top:16px;border-top:1px solid var(--border);display:grid;gap:14px}
+.ans{background:var(--bg);border-inline-start:4px solid var(--ok);border-radius:10px;padding:14px 16px;white-space:pre-wrap}
+.ans.none{border-color:var(--wait);color:var(--muted)}
+.ans small{display:block;font-weight:700;margin-bottom:4px;color:var(--muted)}
+.empty{text-align:center;padding:48px 16px;color:var(--muted)}
+.empty b{display:block;color:var(--text);font-size:1.15rem;margin-bottom:4px}
+/* Forms */
+.formcard{max-width:720px;margin:0 auto}
+.fg{margin-bottom:18px}
+.fg label{display:block;font-weight:700;margin-bottom:6px}
+.fg label em{font-style:normal;color:var(--muted);font-weight:400}
+.fg .err{color:var(--bad);font-size:.88rem;margin-top:4px;min-height:1em}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.in.bad{border-color:var(--bad)}
+/* About */
+.about{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.about .panel h3{margin-bottom:8px;font-size:1.1rem}
+.about .panel p{color:var(--muted)}
+/* Footer */
+.foot{margin-top:56px;background:var(--navy);color:#C9D2EA;padding:36px 0;text-align:center}
+.foot b{display:block;color:#fff;font-size:1.1rem;margin-bottom:6px}
+.foot .credit{margin-top:18px;padding-top:14px;border-top:1px solid rgba(255,255,255,.12);font-size:.9rem;color:#fff;opacity:.85}
+/* Login */
+.login{min-height:100vh;background:var(--navy);display:grid;place-items:center;padding:24px}
+.lcard{width:100%;max-width:420px;background:var(--card);border-radius:24px;padding:36px 32px;text-align:center;box-shadow:0 24px 60px rgba(0,0,0,.35)}
+.crest{width:64px;height:64px;margin:0 auto 18px;border-radius:18px;background:var(--navy);display:grid;place-items:center}
+.lcard h1{font-size:1.7rem;margin-bottom:4px}
+.lcard .sub{margin-bottom:24px}
+.lcard form{text-align:start}
+.pw{position:relative}
+.pw .in{padding-inline-end:76px;direction:ltr;text-align:start}
+.pw button{position:absolute;inset-inline-end:6px;top:6px;bottom:6px;border:0;background:none;color:var(--blue);font-weight:700;cursor:pointer;padding:0 10px;border-radius:8px}
+.lcard .back{display:inline-block;margin-top:18px;color:var(--muted);font-weight:500}
+.formerr{background:rgba(214,69,93,.1);color:var(--bad);border-radius:10px;padding:10px 12px;font-weight:700;margin-bottom:14px}
+/* Admin */
+.adm{display:grid;grid-template-columns:260px 1fr;min-height:100vh}
+.side{background:var(--navy);color:#C9D2EA;padding:24px 16px;display:flex;flex-direction:column;gap:6px;position:sticky;top:0;height:100vh}
+.side .logo{color:#fff;padding:0 10px 22px}
+.side .logo i{background:var(--blue)}
+.side a,.side button{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:11px 14px;border-radius:12px;font-weight:500;border:0;background:none;color:inherit;cursor:pointer;text-align:start;transition:.15s}
+.side a:hover,.side button:hover{background:rgba(255,255,255,.07);color:#fff}
+.side a.on{background:var(--blue);color:#fff}
+.side .cnt{background:rgba(255,255,255,.14);border-radius:99px;padding:0 9px;font-size:.82rem}
+.side .sp{flex:1}
+.main{padding:32px;min-width:0}
+.top{display:flex;align-items:center;gap:14px;margin-bottom:24px}
+.top h1{font-size:1.9rem}
+.menu{display:none;background:var(--card);border:1px solid var(--border);border-radius:10px;width:42px;height:42px;cursor:pointer;font-size:1.2rem}
+.scrim{display:none}
+.split{display:grid;grid-template-columns:1.2fr 1fr;gap:16px;margin-top:16px}
+.bars{display:flex;align-items:flex-end;gap:10px;height:170px;margin-top:10px}
+.bar{flex:1;display:grid;gap:6px;align-content:end;height:100%;text-align:center;font-size:.8rem;color:var(--muted);font-weight:500}
+.bar i{display:block;background:var(--blue);border-radius:8px 8px 4px 4px;min-height:4px;transition:height .4s}
+.act{display:grid;gap:12px;margin-top:10px}
+.act div{display:flex;gap:12px;align-items:flex-start;font-size:.95rem}
+.act i{flex:none;width:10px;height:10px;border-radius:50%;margin-top:9px;background:var(--wait)}
+.act i.a{background:var(--ok)}
+.act small{display:block;color:var(--muted)}
+.tw{overflow-x:auto;border:1px solid var(--border);border-radius:var(--r);background:var(--card);box-shadow:var(--sh)}
+table{width:100%;border-collapse:collapse;min-width:880px}
+th,td{padding:14px 16px;text-align:start;border-bottom:1px solid var(--border);font-size:.95rem;vertical-align:middle}
+th{color:var(--muted);font-size:.85rem;font-weight:700;background:var(--bg)}
+tr:last-child td{border-bottom:0}
+td.qt{max-width:280px;font-weight:700}
+td.acts{white-space:nowrap}
+td.acts .btn{margin-inline-end:4px}
+/* Modal, toast, loader */
+.modal{position:fixed;inset:0;z-index:60;background:rgba(10,16,32,.6);display:grid;place-items:center;padding:20px;animation:fade .2s}
+.modal[hidden]{display:none}
+.mbox{background:var(--card);border-radius:22px;width:100%;max-width:580px;max-height:90vh;overflow:auto;padding:28px;box-shadow:0 30px 80px rgba(0,0,0,.4);animation:pop .22s}
+.mbox h2{font-size:1.4rem;margin-bottom:14px}
+.mbox .qq{background:var(--bg);border-radius:12px;padding:14px 16px;margin-bottom:16px}
+.mbox .qq b{display:block;margin-bottom:4px}
+.mbox .row{justify-content:flex-start;margin-top:6px}
+@keyframes fade{from{opacity:0}}
+@keyframes pop{from{opacity:0;transform:translateY(12px) scale(.98)}}
+.toasts{position:fixed;inset-inline-end:20px;bottom:calc(20px + env(safe-area-inset-bottom,0px));z-index:80;display:grid;gap:10px}
+.toast{background:var(--navy);color:#fff;padding:13px 18px;border-radius:12px;font-weight:500;border-inline-start:5px solid var(--ok);box-shadow:var(--sh);animation:pop .25s}
+.toast.error{border-color:var(--bad)}
+.spin{width:30px;height:30px;border-radius:50%;border:3px solid var(--border);border-top-color:var(--blue);animation:rot .7s linear infinite;margin:40px auto}
+@keyframes rot{to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+/* Responsive */
+@media (max-width:980px){.hero .wrap{grid-template-columns:1fr}.grid4{grid-template-columns:repeat(2,1fr)}.about{grid-template-columns:1fr}.split{grid-template-columns:1fr}.tools{grid-template-columns:1fr 1fr}.tools .in:first-child{grid-column:1/-1}}
+@media (max-width:860px){
+.burger{display:block}
+.links{position:absolute;top:72px;left:0;right:0;flex-direction:column;align-items:stretch;background:var(--card);border-bottom:1px solid var(--border);padding:12px 24px 18px;display:none}
+.links.open{display:flex}
+.adm{grid-template-columns:1fr}
+.side{position:fixed;z-index:50;inset-inline-start:0;top:0;bottom:0;width:270px;transform:translateX(100%);transition:transform .25s}
+.side.open{transform:none}
+.scrim.open{display:block;position:fixed;inset:0;background:rgba(10,16,32,.5);z-index:40}
+.menu{display:block}.main{padding:20px 16px}.top h1{font-size:1.45rem}}
+@media (max-width:560px){.wrap{padding:0 16px}.hero{padding:40px 0 32px}.two{grid-template-columns:1fr}.tools{grid-template-columns:1fr}.grid4{gap:12px}.stat{padding:16px}.stat b{font-size:1.9rem}.btn{flex:1}.panel{padding:18px}.mbox{padding:20px}.toasts{inset-inline-start:16px}}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<div class="modal" id="modal" hidden role="dialog" aria-modal="true"><div class="mbox" id="mbox"></div></div>
+<div class="toasts" id="toasts" aria-live="polite"></div>
+
+<script type="module">
+/* ============ Firebase: قاعدة بيانات مشتركة + تسجيل دخول ============ */
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js";
+import { getFirestore, collection, doc, onSnapshot, updateDoc, writeBatch } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore.js";
+import { getAuth, onAuthStateChanged, signInWithEmailAndPassword, signOut } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-auth.js";
+
+const fbApp = initializeApp({
+  apiKey: "AIzaSyAQsvdDlbJd3VA4cPLTAfV_7Bv4hf9yaeM",
+  authDomain: "eng99-dfe7c.firebaseapp.com",
+  projectId: "eng99-dfe7c",
+  storageBucket: "eng99-dfe7c.firebasestorage.app",
+  messagingSenderId: "75732549736",
+  appId: "1:75732549736:web:64091f5bba2ec87b983bdd"
+});
+const db = getFirestore(fbApp), auth = getAuth(fbApp);
+
+const CATEGORIES = ['القواعد','المفردات','القراءة','الكتابة','الواجبات','الاختبارات','أسئلة عامة'];
+let cache = [], privateMap = {}, dataReady = false, authReady = false, user = null, unsubPrivate = null;
+const sidOf = q => privateMap[q.id] || '';
+const fail = err => Toast.show(err && err.code === 'permission-denied' ? 'ليس لديك صلاحية لتنفيذ هذا الإجراء.' : 'تعذّر تنفيذ العملية. تحقق من الاتصال وحاول مرة أخرى.', 'error');
+
+// الأسئلة في مجموعة "questions" (عامة القراءة)، والرقم الجامعي في "questionsPrivate" (للأدمن فقط)
+const Store = {
+  all() { return cache.slice(); },
+  ref() { let r; do { r = 'E99-' + Date.now().toString(36).toUpperCase().slice(-5) + Math.random().toString(36).toUpperCase().slice(2, 5); } while (cache.some(q => q.ref === r)); return r; },
+  start() {
+    onSnapshot(collection(db, 'questions'),
+      snap => { cache = snap.docs.map(d => ({ id: d.id, ...d.data() })); dataReady = true; onData(); },
+      () => { dataReady = true; Toast.show('تعذّر الاتصال بقاعدة البيانات.', 'error'); onData(); });
+    onAuthStateChanged(auth, u => { user = u; authReady = true; this.watchPrivate(); route(); });
+  },
+  watchPrivate() {
+    if (unsubPrivate) { unsubPrivate(); unsubPrivate = null; }
+    privateMap = {};
+    if (!user) return;
+    unsubPrivate = onSnapshot(collection(db, 'questionsPrivate'),
+      snap => { privateMap = {}; snap.docs.forEach(d => { privateMap[d.id] = d.data().sid || ''; }); },
+      () => {});
+  },
+  async add({ sid, ...data }) {
+    const now = new Date().toISOString();
+    const q = { ref: this.ref(), ...data, date: now, updatedAt: now, status: 'pending', answer: '', answeredAt: null };
+    const qRef = doc(collection(db, 'questions')), batch = writeBatch(db);
+    batch.set(qRef, q);
+    batch.set(doc(db, 'questionsPrivate', qRef.id), { sid: sid || '' });
+    await batch.commit();
+    return q;
+  },
+  async update(id, patch) { await updateDoc(doc(db, 'questions', id), { ...patch, updatedAt: new Date().toISOString() }); },
+  async remove(id) {
+    const batch = writeBatch(db);
+    batch.delete(doc(db, 'questions', id));
+    batch.delete(doc(db, 'questionsPrivate', id));
+    await batch.commit();
+  }
+};
+
+const Auth = {
+  ok() { return !!user; },
+  async login(email, pw) { const c = await signInWithEmailAndPassword(auth, email, pw); user = c.user; Store.watchPrivate(); return c; },
+  logout() { return signOut(auth).then(() => { user = null; Store.watchPrivate(); }); }
+};
+
+/* ============ أدوات مساعدة ============ */
+const LOC = 'ar-u-nu-latn';
+const $ = (s, e = document) => e.querySelector(s);
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const fmt = iso => new Date(iso).toLocaleDateString(LOC, { year: 'numeric', month: 'short', day: 'numeric' });
+const fmtT = iso => new Date(iso).toLocaleString(LOC, { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' });
+const sameDay = (a, b) => new Date(a).toDateString() === new Date(b).toDateString();
+const badge = s => `<span class="badge ${s}">${s === 'answered' ? 'تمت الإجابة' : 'قيد الانتظار'}</span>`;
+const ref = r => `<bdi dir="ltr">${esc(r)}</bdi>`;
+const Toast = { show(msg, type = 'success') { const t = document.createElement('div'); t.className = 'toast ' + type; t.textContent = msg; $('#toasts').append(t); setTimeout(() => t.remove(), 3800); } };
+const Modal = {
+  open(html) { $('#mbox').innerHTML = html; $('#modal').hidden = false; const f = $('#mbox textarea,#mbox button'); f && f.focus(); },
+  close() { $('#modal').hidden = true; $('#mbox').innerHTML = ''; }
+};
+function stats() {
+  const l = Store.all(), week = Date.now() - 7 * 864e5;
+  return {
+    total: l.length,
+    answered: l.filter(q => q.status === 'answered').length,
+    pending: l.filter(q => q.status === 'pending').length,
+    recent: l.filter(q => new Date(q.updatedAt).getTime() > week).length,
+    today: l.filter(q => sameDay(q.date, new Date())).length
+  };
+}
+const catOptions = all => (all ? '<option value="">كل التصنيفات</option>' : '<option value="">اختر التصنيف</option>') + CATEGORIES.map(c => `<option>${c}</option>`).join('');
+
+/* ============ الواجهات ============ */
+const publicNav = r => `
+<header class="nav"><div class="wrap">
+  <a class="logo" href="#/"><i>99</i>إنجليزي 99</a>
+  <button class="burger" data-act="nav" aria-label="القائمة" aria-expanded="false">☰</button>
+  <nav class="links" id="links" aria-label="التنقل الرئيسي">
+    ${[['/', 'الرئيسية'], ['/questions', 'الأسئلة والأجوبة'], ['/ask', 'اسأل سؤالاً'], ['/about', 'حول البوابة']].map(([h, t]) => `<a href="#${h}" class="${r === h ? 'on' : ''}">${t}</a>`).join('')}
+    <a href="#/admin-login" class="cta">دخول المشرف</a>
+  </nav>
+</div></header>`;
+const footer = `<footer class="foot"><div class="wrap"><b>إنجليزي 99 · الشعبة 05</b>مقرر واحد. مجتمع واحد. كل سؤال يهم.<div class="credit">تطوير: المطوّر مالك العمري</div></div></footer>`;
+
+function statCards(admin) {
+  const s = stats();
+  const items = admin
+    ? [['إجمالي الأسئلة', s.total, 'blue', '/admin/all'], ['الأسئلة قيد الانتظار', s.pending, 'wait', '/admin/pending'], ['الأسئلة المُجابة', s.answered, 'ok', '/admin/answered'], ['الأسئلة الواردة اليوم', s.today, '', '/admin/all']]
+    : [['إجمالي الأسئلة', s.total, 'blue', ''], ['تمت الإجابة', s.answered, 'ok', 'answered'], ['قيد الانتظار', s.pending, 'wait', 'pending'], ['آخر التحديثات', s.recent, '', '']];
+  return `<div class="grid4">${items.map(([l, n, c, go]) => `<button class="stat ${c}" data-act="${admin ? 'go' : 'statgo'}" data-go="${go}"><b>${dataReady ? n : '…'}</b><span>${l}</span></button>`).join('')}</div>`;
+}
+
+const illustration = `<svg viewBox="0 0 420 380" role="img" aria-label="رسم تجريدي للأسئلة والأجوبة">
+<rect width="420" height="380" rx="16" fill="#101B35"/>
+<circle cx="330" cy="70" r="90" fill="#315EF7" opacity=".25"/><circle cx="70" cy="320" r="110" fill="#315EF7" opacity=".14"/>
+<rect x="144" y="62" width="230" height="96" rx="20" fill="#fff"/><rect x="164" y="86" width="120" height="10" rx="5" fill="#101B35"/><rect x="164" y="108" width="170" height="8" rx="4" fill="#C9D2EA"/><rect x="164" y="126" width="100" height="8" rx="4" fill="#C9D2EA"/>
+<path d="M350 158l4 28-30-28z" fill="#fff"/>
+<rect x="44" y="196" width="226" height="104" rx="20" fill="#315EF7"/><rect x="68" y="220" width="130" height="10" rx="5" fill="#fff"/><rect x="68" y="242" width="170" height="8" rx="4" fill="#fff" opacity=".6"/><rect x="68" y="260" width="110" height="8" rx="4" fill="#fff" opacity=".6"/>
+<path d="M70 300l-6 26 28-26z" fill="#315EF7"/>
+<circle cx="102" cy="112" r="26" fill="#16A36A"/><path d="M90 112l9 9 16-18" stroke="#fff" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="328" cy="250" r="22" fill="#E9A23B"/><text x="328" y="260" text-anchor="middle" font-size="28" font-weight="800" fill="#101B35" font-family="Tajawal,sans-serif">؟</text>
+</svg>`;
+
+const Views = {
+  home: () => `${publicNav('/')}
+<main>
+<section class="hero"><div class="wrap">
+  <div>
+    <span class="eyebrow">بوابة المقرر · الشعبة 05</span>
+    <h1>أسئلتكم. إجابات واضحة.</h1>
+    <p class="lead">مساحة أكاديمية مخصصة لطلاب مقرر اللغة الإنجليزية 99 لطرح الأسئلة، والعثور على الإجابات، والبقاء على تواصل مع المحاضِرة.</p>
+    <div class="row"><a class="btn btn-primary" href="#/questions">استعرض الأسئلة</a><a class="btn btn-ghost" href="#/ask">اسأل سؤالاً</a></div>
+  </div>
+  <div class="art">${illustration}</div>
+</div></section>
+<section class="sec"><div class="wrap"><h2>المقرر في لمحة</h2><p class="sub">أرقام مباشرة من البوابة.</p><div id="stats">${statCards(false)}</div></div></section>
+</main>${footer}`,
+
+  questions: (f = {}) => `${publicNav('/questions')}
+<main class="sec"><div class="wrap">
+  <h2>الأسئلة والأجوبة</h2><p class="sub">ابحث في الأسئلة، أو افتح أي بطاقة لقراءة إجابة المحاضِرة.</p>
+  <div class="tools">
+    <input class="in" id="q-search" type="search" placeholder="ابحث بالعنوان أو نص السؤال أو الرقم المرجعي" aria-label="بحث" value="${esc(f.search || '')}">
+    <select class="in" id="q-cat" aria-label="التصنيف">${catOptions(true)}</select>
+    <select class="in" id="q-status" aria-label="الحالة"><option value="">كل الحالات</option><option value="answered" ${f.status === 'answered' ? 'selected' : ''}>تمت الإجابة</option><option value="pending" ${f.status === 'pending' ? 'selected' : ''}>قيد الانتظار</option></select>
+    <select class="in" id="q-sort" aria-label="الترتيب"><option value="new">الأحدث أولاً</option><option value="old">الأقدم أولاً</option></select>
+  </div>
+  <div id="qlist" class="qlist"><div class="spin" role="status" aria-label="جارٍ التحميل"></div></div>
+</div></main>${footer}`,
+
+  ask: () => `${publicNav('/ask')}
+<main class="sec"><div class="wrap formcard">
+  <h2>اسأل سؤالاً</h2><p class="sub">يصل سؤالك إلى محاضِرة المقرر. الاسم والرقم الجامعي اختياريان.</p>
+  <form class="panel" id="ask-form" novalidate>
+    <div class="two">
+      <div class="fg"><label for="f-name">اسم الطالب <em>(اختياري)</em></label><input class="in" id="f-name" maxlength="80" autocomplete="name"></div>
+      <div class="fg"><label for="f-sid">الرقم الجامعي <em>(اختياري)</em></label><input class="in" id="f-sid" maxlength="30" dir="ltr" style="text-align:start"></div>
+    </div>
+    <div class="fg"><label for="f-cat">تصنيف السؤال</label><select class="in" id="f-cat">${catOptions(false)}</select><div class="err" data-for="f-cat"></div></div>
+    <div class="fg"><label for="f-title">عنوان السؤال</label><input class="in" id="f-title" maxlength="120"><div class="err" data-for="f-title"></div></div>
+    <div class="fg"><label for="f-body">تفاصيل السؤال</label><textarea class="in" id="f-body" maxlength="2000"></textarea><div class="err" data-for="f-body"></div></div>
+    <button class="btn btn-primary" type="submit" id="f-btn">إرسال السؤال</button>
+  </form>
+</div></main>${footer}`,
+
+  about: () => `${publicNav('/about')}
+<main class="sec"><div class="wrap">
+  <h2>حول البوابة</h2><p class="sub">مقرر واحد. مجتمع واحد. كل سؤال يهم.</p>
+  <div class="about">
+    <div class="panel"><h3>للطلاب</h3><p>اسأل عن القواعد أو المفردات أو القراءة أو الكتابة أو الواجبات أو الاختبارات. تصفّح الأسئلة السابقة أولاً، فقد تجد إجابتك جاهزة.</p></div>
+    <div class="panel"><h3>المحاضِرة</h3><p>تراجع المحاضِرة كل سؤال في مقرر إنجليزي 99، الشعبة 05، وتنشر الإجابات هنا ليستفيد منها الجميع.</p></div>
+    <div class="panel"><h3>الأرقام المرجعية</h3><p>يحصل كل سؤال على رقم مرجعي فريد مثل E99-AB12CD. اذكره عند المتابعة في المحاضرة.</p></div>
+  </div>
+</div></main>${footer}`,
+
+  login: () => `<div class="login"><div class="lcard">
+  <div class="crest"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-5 9 5-9 5-9-5z"/><path d="M7 11.5V16c0 1.5 2.5 3 5 3s5-1.5 5-3v-4.5"/></svg></div>
+  <h1>بوابة الإدارة</h1><p class="sub">دخول المصرّح لهم فقط</p>
+  <form id="login-form" novalidate>
+    <div id="login-err" class="formerr" hidden role="alert"></div>
+    <div class="fg"><label for="l-email">البريد الإلكتروني</label><input class="in" id="l-email" type="email" dir="ltr" autocomplete="username" style="text-align:start"></div>
+    <div class="fg"><label for="l-pw">كلمة السر</label>
+      <div class="pw"><input class="in" id="l-pw" type="password" autocomplete="current-password"><button type="button" data-act="pw" aria-label="إظهار أو إخفاء الرمز">إظهار</button></div></div>
+    <button class="btn btn-primary" id="l-btn" type="submit" style="width:100%">تسجيل الدخول</button>
+  </form>
+  <a class="back" href="#/">العودة إلى الموقع</a>
+</div></div>`,
+
+  admin: view => {
+    const s = stats(), titles = { dashboard: 'أهلاً بعودتك', all: 'جميع الأسئلة', pending: 'الأسئلة قيد الانتظار', answered: 'الأسئلة المُجابة' };
+    const nav = [['dashboard', 'لوحة التحكم', ''], ['all', 'جميع الأسئلة', s.total], ['pending', 'الأسئلة قيد الانتظار', s.pending], ['answered', 'الأسئلة المُجابة', s.answered]];
+    return `<div class="adm">
+<aside class="side" id="side"><a class="logo" href="#/"><i>99</i>إنجليزي 99</a>
+  ${nav.map(([k, t, c]) => `<a href="#/admin/${k}" class="${view === k ? 'on' : ''}">${t}${c !== '' ? `<span class="cnt">${c}</span>` : ''}</a>`).join('')}
+  <div class="sp"></div><button data-act="logout">تسجيل الخروج</button></aside>
+<div class="scrim" id="scrim" data-act="menu"></div>
+<main class="main"><div class="top"><button class="menu" data-act="menu" aria-label="فتح القائمة">☰</button><h1>${titles[view]}</h1></div>
+${view === 'dashboard' ? dashboard() : table(view)}
+</main></div>`;
+  }
+};
+
+function dashboard() {
+  if (!dataReady) return '<div class="spin" role="status" aria-label="جارٍ التحميل"></div>';
+  const l = Store.all(), days = [...Array(7)].map((_, i) => new Date(Date.now() - (6 - i) * 864e5));
+  const counts = days.map(d => l.filter(q => sameDay(q.date, d)).length), max = Math.max(1, ...counts);
+  const events = l.flatMap(q => [{ t: q.date, type: 'p', q }, ...(q.answeredAt ? [{ t: q.answeredAt, type: 'a', q }] : [])]).sort((a, b) => new Date(b.t) - new Date(a.t)).slice(0, 6);
+  return `${statCards(true)}
+<div class="split">
+  <div class="panel"><h3>الأسئلة الواردة خلال آخر 7 أيام</h3>
+    <div class="bars">${counts.map((c, i) => `<div class="bar"><span>${c}</span><i style="height:${Math.round(c / max * 100)}px"></i>${days[i].toLocaleDateString(LOC, { weekday: 'short' })}</div>`).join('')}</div></div>
+  <div class="panel"><h3>آخر النشاطات</h3>
+    <div class="act">${events.length ? events.map(e => `<div><i class="${e.type}"></i><span>${e.type === 'a' ? 'تمت الإجابة' : 'سؤال جديد'}: ${esc(e.q.title)}<small>${ref(e.q.ref)} · ${fmtT(e.t)}</small></span></div>`).join('') : '<p class="sub">لا يوجد نشاط بعد.</p>'}</div></div>
+</div>`;
+}
+
+function table(view) {
+  if (!dataReady) return '<div class="spin" role="status" aria-label="جارٍ التحميل"></div>';
+  const l = Store.all().filter(q => view === 'all' || q.status === view).sort((a, b) => new Date(b.date) - new Date(a.date));
+  if (!l.length) return `<div class="panel empty"><b>لا توجد أسئلة هنا</b>${view === 'pending' ? 'تمت الإجابة عن جميع الأسئلة.' : 'ستظهر الأسئلة هنا عندما يرسلها الطلاب.'}</div>`;
+  return `<div class="tw"><table><thead><tr><th>الرقم المرجعي</th><th>اسم الطالب</th><th>السؤال</th><th>التصنيف</th><th>التاريخ</th><th>الحالة</th><th>الإجراءات</th></tr></thead><tbody>
+${l.map(q => `<tr><td><b>${ref(q.ref)}</b></td><td>${esc(q.name) || '<span class="sub" style="margin:0">مجهول</span>'}</td><td class="qt">${esc(q.title)}</td><td><span class="tag">${esc(q.category)}</span></td><td>${fmt(q.date)}</td><td>${badge(q.status)}</td>
+<td class="acts"><button class="btn btn-ghost btn-sm" data-act="view" data-id="${q.id}">عرض</button><button class="btn btn-primary btn-sm" data-act="answer" data-id="${q.id}">${q.status === 'answered' ? 'تعديل الإجابة' : 'كتابة إجابة'}</button><button class="btn btn-ghost btn-sm" data-act="del" data-id="${q.id}">حذف</button></td></tr>`).join('')}
+</tbody></table></div>`;
+}
+
+/* ============ قائمة الأسئلة العامة ============ */
+function questionCard(q) {
+  return `<details class="q"><summary><div class="meta">${badge(q.status)}<span class="tag">${esc(q.category)}</span><span>${ref(q.ref)}</span><span>${fmt(q.date)}</span></div><h3>${esc(q.title)}</h3></summary>
+<div class="body"><p style="white-space:pre-wrap">${esc(q.body)}</p><div class="meta"><span>سأل: ${esc(q.name) || 'طالب'}</span></div>
+${q.answer ? `<div class="ans"><small>إجابة المحاضِرة · ${fmt(q.answeredAt)}</small>${esc(q.answer)}</div>` : '<div class="ans none"><small>بانتظار الإجابة</small>لم تتم الإجابة عن هذا السؤال بعد.</div>'}</div></details>`;
+}
+function renderList() {
+  const box = $('#qlist'); if (!box) return;
+  if (!dataReady) { box.innerHTML = '<div class="spin" role="status" aria-label="جارٍ التحميل"></div>'; return; }
+  const term = $('#q-search').value.trim().toLowerCase(), cat = $('#q-cat').value, st = $('#q-status').value, so = $('#q-sort').value;
+  const l = Store.all().filter(q => (!cat || q.category === cat) && (!st || q.status === st) && (!term || [q.title, q.body, q.ref, q.name, q.answer].join(' ').toLowerCase().includes(term)));
+  l.sort((a, b) => so === 'old' ? new Date(a.date) - new Date(b.date) : new Date(b.date) - new Date(a.date));
+  box.innerHTML = l.length ? l.map(questionCard).join('') : '<div class="panel empty"><b>لم يتم العثور على أسئلة</b>جرّب بحثاً أو فلتراً مختلفاً، أو اطرح سؤالاً جديداً.</div>';
+}
+
+/* ============ التوجيه ============ */
+let pending = {};
+function route(keep) {
+  const r = location.hash.replace(/^#/, '') || '/', app = $('#app'), y = window.scrollY;
+  if (!keep) { Modal.close(); window.scrollTo(0, 0); }
+  if ((r.startsWith('/admin/') || r === '/admin-login') && !authReady) { app.innerHTML = '<div class="spin" role="status" aria-label="جارٍ التحميل"></div>'; return; }
+  if (r.startsWith('/admin/')) {
+    if (!Auth.ok()) { location.hash = '#/admin-login'; return; }
+    const v = r.split('/')[2]; app.innerHTML = Views.admin(['dashboard', 'all', 'pending', 'answered'].includes(v) ? v : 'dashboard');
+  } else if (r === '/admin-login') {
+    if (Auth.ok()) { location.hash = '#/admin/dashboard'; return; }
+    app.innerHTML = Views.login();
+  } else {
+    const page = { '/': 'home', '/questions': 'questions', '/ask': 'ask', '/about': 'about' }[r] || 'home';
+    app.innerHTML = Views[page](pending);
+    if (page === 'questions') { pending = {}; renderList(); }
+  }
+  if (keep) window.scrollTo(0, y);
+}
+// تُستدعى عند وصول أي تحديث من قاعدة البيانات
+function onData() {
+  const r = location.hash.replace(/^#/, '') || '/';
+  if (r === '/questions') renderList();
+  else if (r === '/') { const st = $('#stats'); if (st) st.innerHTML = statCards(false); }
+  else if (r.startsWith('/admin/') && Auth.ok() && $('#modal').hidden) route(true);
+}
+
+/* ============ الأحداث ============ */
+function viewModal(id) {
+  const q = Store.all().find(x => x.id === id); if (!q) return;
+  Modal.open(`<h2>${esc(q.title)}</h2><div class="meta" style="margin-bottom:14px">${badge(q.status)}<span class="tag">${esc(q.category)}</span><span>${ref(q.ref)}</span><span>${fmt(q.date)}</span></div>
+<div class="qq"><b>${esc(q.name) || 'مجهول'}${sidOf(q) ? ' · الرقم الجامعي ' + esc(sidOf(q)) : ''}</b><span style="white-space:pre-wrap">${esc(q.body)}</span></div>
+${q.answer ? `<div class="ans"><small>الإجابة المنشورة</small>${esc(q.answer)}</div>` : ''}<div class="row"><button class="btn btn-ghost" data-act="close">إغلاق</button></div>`);
+}
+function answerModal(id) {
+  const q = Store.all().find(x => x.id === id); if (!q) return;
+  Modal.open(`<h2>${q.status === 'answered' ? 'تعديل الإجابة' : 'كتابة إجابة'}</h2><div class="qq"><b>سؤال الطالب: ${esc(q.title)}</b><span style="white-space:pre-wrap">${esc(q.body)}</span></div>
+<div class="fg"><label for="a-text">إجابتك</label><textarea class="in" id="a-text" maxlength="4000">${esc(q.answer)}</textarea><div class="err" id="a-err"></div></div>
+<div class="row"><button class="btn btn-primary" data-act="publish" data-id="${id}">نشر الإجابة</button><button class="btn btn-ghost" data-act="close">إلغاء</button></div>`);
+}
+function delModal(id) {
+  const q = Store.all().find(x => x.id === id); if (!q) return;
+  Modal.open(`<h2>حذف هذا السؤال؟</h2><p class="sub">سيتم حذف «${esc(q.title)}» (${ref(q.ref)}) مع إجابته نهائياً.</p><div class="row"><button class="btn btn-danger" data-act="confirmdel" data-id="${id}">حذف السؤال</button><button class="btn btn-ghost" data-act="close">إلغاء</button></div>`);
+}
+
+document.addEventListener('click', e => {
+  const el = e.target.closest('[data-act]'); if (!el) { if (e.target.id === 'modal') Modal.close(); return; }
+  const id = el.dataset.id;
+  switch (el.dataset.act) {
+    case 'nav': { const o = $('#links').classList.toggle('open'); el.setAttribute('aria-expanded', o); break; }
+    case 'menu': $('#side').classList.toggle('open'); $('#scrim').classList.toggle('open'); break;
+    case 'statgo': { pending = el.dataset.go ? { status: el.dataset.go } : {}; const same = location.hash === '#/questions'; location.hash = '#/questions'; if (same) route(); break; }
+    case 'go': location.hash = '#' + el.dataset.go; break;
+    case 'pw': { const i = $('#l-pw'), s = i.type === 'password'; i.type = s ? 'text' : 'password'; el.textContent = s ? 'إخفاء' : 'إظهار'; break; }
+    case 'logout': Auth.logout().then(() => { Toast.show('تم تسجيل الخروج.'); location.hash = '#/admin-login'; }); break;
+    case 'view': viewModal(id); break;
+    case 'answer': answerModal(id); break;
+    case 'del': delModal(id); break;
+    case 'close': Modal.close(); break;
+    case 'publish': {
+      const t = $('#a-text').value.trim();
+      if (t.length < 3) { $('#a-err').textContent = 'اكتب الإجابة قبل النشر.'; return; }
+      const wasEdit = Store.all().find(q => q.id === id)?.status === 'answered';
+      el.disabled = true;
+      Store.update(id, { answer: t, status: 'answered', answeredAt: new Date().toISOString() })
+        .then(() => { Modal.close(); onData(); Toast.show(wasEdit ? 'تم تحديث الإجابة.' : 'تم نشر الإجابة.'); })
+        .catch(fail).finally(() => { el.disabled = false; });
+      break;
+    }
+    case 'confirmdel':
+      el.disabled = true;
+      Store.remove(id).then(() => { Modal.close(); onData(); Toast.show('تم حذف السؤال.'); }).catch(fail).finally(() => { el.disabled = false; });
+      break;
+  }
+});
+
+document.addEventListener('input', e => {
+  if (e.target.id === 'q-search') renderList();
+  if (e.target.classList.contains('in')) { e.target.classList.remove('bad'); const m = $(`.err[data-for="${e.target.id}"]`); if (m) m.textContent = ''; }
+});
+document.addEventListener('change', e => { if (['q-cat', 'q-status', 'q-sort'].includes(e.target.id)) renderList(); });
+document.addEventListener('keydown', e => { if (e.key === 'Escape' && !$('#modal').hidden) Modal.close(); });
+
+document.addEventListener('submit', e => {
+  e.preventDefault();
+  if (e.target.id === 'ask-form') {
+    const v = { name: $('#f-name').value.trim(), sid: $('#f-sid').value.trim(), category: $('#f-cat').value, title: $('#f-title').value.trim(), body: $('#f-body').value.trim() };
+    const rules = { 'f-cat': [v.category, 'اختر تصنيف السؤال.'], 'f-title': [v.title.length >= 5, 'اكتب عنواناً من 5 أحرف على الأقل.'], 'f-body': [v.body.length >= 15, 'اشرح سؤالك في 15 حرفاً على الأقل.'] };
+    let bad = false;
+    Object.entries(rules).forEach(([id, [ok, msg]]) => { $(`.err[data-for="${id}"]`).textContent = ok ? '' : msg; $('#' + id).classList.toggle('bad', !ok); if (!ok) bad = true; });
+    if (bad) { Toast.show('يرجى تصحيح الحقول المحددة.', 'error'); return; }
+    const b = $('#f-btn'); b.disabled = true; b.textContent = 'جارٍ الإرسال…';
+    Store.add(v).then(q => { e.target.reset(); Toast.show(`تم إرسال سؤالك. رقمك المرجعي: ${q.ref}`); }).catch(fail).finally(() => { b.disabled = false; b.textContent = 'إرسال السؤال'; });
+  }
+  if (e.target.id === 'login-form') {
+    const b = $('#l-btn'), err = $('#login-err'); b.disabled = true; b.textContent = 'جارٍ التحقق…'; err.hidden = true;
+    Auth.login($('#l-email').value.trim(), $('#l-pw').value)
+      .then(() => { Toast.show('أهلاً بعودتك.'); location.hash = '#/admin/dashboard'; })
+      .catch(() => { err.textContent = 'البريد الإلكتروني أو كلمة السر غير صحيحة.'; err.hidden = false; $('#l-pw').select(); })
+      .finally(() => { b.disabled = false; b.textContent = 'تسجيل الدخول'; });
+  }
+});
+
+window.addEventListener('hashchange', () => route());
+Store.start();
+route();
+</script>
+</body>
+</html>
